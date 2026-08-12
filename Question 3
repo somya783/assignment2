@@ -1,0 +1,39 @@
+using Aassingment2;
+using System;
+using System.Net;
+using System.Xml.Linq;
+
+namespace Aassingment2
+{
+    class GraduateStudent : Student
+    {
+        public void ShowData()
+        {
+            Console.WriteLine(Name);        // Accessible
+
+            // Console.WriteLine(Age);      // Error
+
+            Console.WriteLine(Department);  // Accessible
+
+            Console.WriteLine(CGPA);        // Accessible
+
+            Console.WriteLine(College);     // Accessible
+
+            Console.WriteLine(Address);     // Accessible
+
+            Console.WriteLine("\nUsing Student Object:");
+
+            Student s = new Student();
+
+            Console.WriteLine(s.Name);
+
+            // Console.WriteLine(s.Department); // Error
+
+            Console.WriteLine(s.CGPA);
+
+            Console.WriteLine(s.College);
+
+            // Console.WriteLine(s.Address);    // Error
+        }
+    }
+}
