@@ -1,0 +1,32 @@
+using System;
+using StudentLibrary;
+
+namespace StudentClient
+{
+    public class ResearchStudent : Student
+    {
+        public void ShowData()
+        {
+            Console.WriteLine("Access through ResearchStudent");
+            Console.WriteLine("-----------------------------");
+
+            // Public
+            Console.WriteLine("Name       : " + Name);
+
+            // Private - NOT ACCESSIBLE
+            // Console.WriteLine("Age        : " + Age);
+
+            // Protected - ACCESSIBLE
+            Console.WriteLine("Department : " + Department);
+
+            // Internal - NOT ACCESSIBLE
+            // Console.WriteLine("CGPA       : " + CGPA);
+
+            // Protected Internal - ACCESSIBLE
+            Console.WriteLine("College    : " + College);
+
+            // Private Protected - NOT ACCESSIBLE
+            // Console.WriteLine("Address    : " + Address);
+        }
+    }
+}
